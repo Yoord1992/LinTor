@@ -1,3 +1,9 @@
+
+<center>
+<img src="http://s8.picofile.com/file/8346424584/tor.png">
+<center/>
+
+
 # LinTor V0.0.1
 Easy Install Tor Service On GNU/Linux Distribution
 <p>
