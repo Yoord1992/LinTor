@@ -6,16 +6,7 @@
 Easy Install Tor Service On GNU/Linux Distribution
 <p>
   &nbsp;
-join us in telegram and instagram channel
-<p>
-<b>Telegram :</b> @LinApps
-<p>
-<b>Instagram :</b> @LinApps_Insta 
-<p>
-&nbsp;
-  <p>
-    <p>
-&nbsp;
+
 <b>How To Install LinTor </b>
 
 1 - git clone https://github.com/LinApps/LinTor
@@ -25,7 +16,13 @@ join us in telegram and instagram channel
 3 - chmod +x ./lintor.sh
 <p>
 4 - ./lintor.sh
-
+&nbsp;
+  <p>
+    <p>
+&nbsp;
+join us in telegram and instagram channel
 <p>
+<b>Telegram :</b> LinApps
 <p>
+<b>Instagram :</b> LinApps_Insta 
 <p>
