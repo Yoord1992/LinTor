@@ -106,7 +106,7 @@ clear
 echo "starting tor service ... "
 	sudo systemctl daemon-reload 
 	sleep 2
-	sudo systemctl restart tor 
+	sudo systemctl restart tor.service
 clear
 sleep 1
 echo "done!"
@@ -219,37 +219,37 @@ case "$distro_name" in
 
 	"Ubun")
 	
-echo "you are using Ubuntu :)"
+echo "You Are Using Ubuntu Distro :)"
 ;;
 
 		
 	"Deep")
 	
-echo "you are using Deepin :)"
+echo "You Are Using Deepin Distro :)"
 ;;
 
 
     "Linu")
 	
-echo "you are using Linux Mint :)"
+echo "You Are Using Linux Mint Distro :)"
 ;;
 
 
     "Zubu")
 	
-echo "you are using Zubuntu :)"
+echo "You Are Using Zubuntu Distro :)"
 ;; 
 
 
     "Xubu")
 	
-echo "you are using Xubuntu :)"
+echo "You Are Using Xubuntu Distro :)"
 ;; 
 
 
     "Debi")
 	
-echo "you are using Debian :)"
+echo "You Are Using Debian Distro :)"
 ;; 
 
 
@@ -282,19 +282,19 @@ case "$distro_name" in
 
 	"Arch")
 	
-echo "you are using Arch :)"
+echo "You Are Using Arch Distro :)"
 ;;
 
 		
 	"Manj")
 	
-echo "you are using Manjaro :)"
+echo "You Are Using Manjaro Distro :)"
 ;;
 
 
     "Anar")
 	
-echo "you are using Anarchy :)"
+echo "You Are Using Anarchy Distro :)"
 ;;
 
 
@@ -324,7 +324,7 @@ case "$distro_name" in
 
 	"Fedo")
 	
-echo "you are using Fedora :)"
+echo You Are Using Fedora Distro :)"
 ;;
 
 
