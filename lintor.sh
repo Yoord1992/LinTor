@@ -30,7 +30,7 @@ sleep 1
 clear
 echo "obfsproxy is installing ... "
 	sleep 2
-	sudo apt install -y obfsproxy &>/dev/null
+	sudo apt install -y obfs4 &>/dev/null
 clear
 sleep 1
 echo  "done!"
@@ -89,7 +89,7 @@ sleep 1
 clear
 echo "obfsproxy are installing ... "
 	sleep 2
-	sudo dnf install -y obfsproxy &>/dev/null
+	sudo dnf install -y obfs4 &>/dev/null
 clear
 sleep 1
 echo  "done!"
