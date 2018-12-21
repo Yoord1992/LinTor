@@ -36,7 +36,7 @@ sleep 1
 echo  "done!"
 sleep 1
 clear
-echo -e "the bridges is installing ..."  
+echo -e "the bridges are installing ..."  
    sleep 2
 	echo "`cat torrc`" | sudo tee /etc/tor/torrc  &>/dev/null
 	sleep 1
@@ -87,7 +87,7 @@ sleep 1
 echo -e "done!"
 sleep 1
 clear
-echo "obfsproxy is installing ... "
+echo "obfsproxy are installing ... "
 	sleep 2
 	sudo dnf install -y obfsproxy &>/dev/null
 clear
@@ -139,31 +139,32 @@ sleep 1
 echo -e "done!"
 sleep 1
 clear
-echo "obfsproxy is installing ... "
-sleep 1
-clear 
-    sudo pacman -U --noconfirm Arch/obfs4proxy.pkg.tar.xz  &>/dev/null
-	sleep 2
-    sudo pacman -Sy --noconfirm obfs4proxy  &>/dev/null
+# echo "obfsproxy is installing ... "
+#sleep 1
+#clear 
+ #   sudo pacman -U --noconfirm Arch/obfs4proxy.pkg.tar.xz  &>/dev/null
+#	sleep 2
+ #   sudo pacman -Sy --noconfirm obfs4proxy  &>/dev/null
 
-echo -e "the bridges is installing ..."  
-    sleep 2
-	echo "`cat torrc`" | sudo tee /etc/tor/torrc  &>/dev/null
-	sleep 1
+#echo -e "the bridges are installing ..."  
+ #   sleep 2
+#	echo "`cat torrc`" | sudo tee /etc/tor/torrc  &>/dev/null
+#	sleep 1
 	
-[[ ! $(systemctl status tor.service | grep " active" ) ]] && sudo cp -f Arch/tor.service /etc/systemd/system/multi-user.target.wants
+#[[ ! $(systemctl status tor.service | grep " active" ) ]] && sudo cp -f Arch/tor.service /etc/systemd/system/multi-user.target.wants
 		 
 
 	
-clear
-sleep 1
-echo  "done!"
-sleep 1
-clear
+#clear
+#sleep 
+#echo  "done!"
+#sleep 1
+#clear
 echo "starting tor service ... "
-	sudo systemctl daemon-reload 
-	sleep 2
-	sudo systemctl restart tor 
+	sleep 1
+	sudo systemctl enable tor.service
+	sleep 1
+        sudo systemctl start tor.service
 clear
 sleep 1
 echo "done!"
@@ -334,12 +335,9 @@ esac
 echo -e "please wait ..."
 
 sleep 5
-pacman
+dnf
 
 ;;
 
 *)
 esac
-
-
-
