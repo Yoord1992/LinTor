@@ -1,5 +1,5 @@
 <center>
-<img src="http://s8.picofile.com/file/8346451634/tor2.png">
+<img src="http://s8.picofile.com/file/8346451668/tor3.png.png">
 <center/>
 
 # LinTor V0.0.1
