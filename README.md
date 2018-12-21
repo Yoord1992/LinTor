@@ -1,8 +1,6 @@
-
 <center>
 <img src="http://s9.picofile.com/file/8346451068/tor.png">
 <center/>
-&nbsp;
 
 # LinTor V0.0.1
 Easy Install Tor Service On GNU/Linux Distribution
@@ -10,11 +8,13 @@ Easy Install Tor Service On GNU/Linux Distribution
   &nbsp;
 join us in telegram and instagram channel
 <p>
-Telegram : t.me/LinApps
+<b>Telegram :</b> @LinApps
 <p>
-Instagram : instagram.com/LinApps_Insta 
+<b>Instagram :</b> @LinApps_Insta 
 <p>
 &nbsp;
+  <p>
+    <p>
 &nbsp;
 <b>How To Install LinTor </b>
 
