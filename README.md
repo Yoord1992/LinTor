@@ -20,7 +20,7 @@ Easy Install Tor Service On GNU/Linux Distribution
   <p>
     <p>
 &nbsp;
-join us in telegram and instagram channel
+&nbsp;
 <p>
 <b>Telegram :</b> LinApps
 <p>
