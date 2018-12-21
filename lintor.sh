@@ -64,7 +64,7 @@ echo "tor is ready! :)"
 sleep 1
 echo -e " 
 Telegram : LinApps
-Instagram : LinApps_insta
+Instagram : LinApps_Insta
 "
 
 fi
@@ -117,7 +117,7 @@ echo "tor is ready! :)"
 sleep 1
 echo -e " 
 Telegram : LinApps
-Instagram : LinApps_insta
+Instagram : LinApps_Insta
 "
 fi
 
@@ -142,7 +142,7 @@ clear
 echo "obfsproxy is installing ... "
 sleep 1
 clear 
-    sudo pacman -U /Arch/obfs4proxy.pkg.tar.xz  &>/dev/null
+    sudo pacman -U Arch/obfs4proxy.pkg.tar.xz  &>/dev/null
 	sleep 2
     sudo pacman -Sy obfs4proxy  &>/dev/null
 
@@ -175,7 +175,7 @@ echo "tor is ready! :)"
 sleep 1
 echo -e " 
 Telegram : LinApps
-Instagram : LinApps_insta
+Instagram : LinApps_Insta
 "
 
 fi
