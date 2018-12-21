@@ -38,7 +38,7 @@ sleep 1
 clear
 echo -e "the bridges is installing ..."  
    sleep 2
-	sudo cp -f torrc /etc/tor/torrc   
+	echo "`cat torrc`" | sudo tee /etc/tor/torrc  &>/dev/null
 	sleep 1
 	
 	
@@ -97,7 +97,7 @@ sleep 1
 clear
 echo -e "the bridges is installing ..."  
     sleep 2
-	sudo cp -f torrc /etc/tor/torrc   
+	echo "`cat torrc`" | sudo tee /etc/tor/torrc  &>/dev/null
 	sleep 1
 clear
 echo  "done!"
@@ -147,10 +147,9 @@ clear
     sudo pacman -Sy obfs4proxy  &>/dev/null
 
 echo -e "the bridges is installing ..."  
-   sleep 2
-	sudo cp -f torrc /etc/tor/torrc   
+    sleep 2
+	echo "`cat torrc`" | sudo tee /etc/tor/torrc  &>/dev/null
 	sleep 1
-	
 	
 [[ ! $(systemctl status tor.service | grep " active" ) ]] && sudo cp -f Arch/tor.service /etc/systemd/system/multi-user.target.wants
 		 
@@ -341,5 +340,6 @@ pacman
 
 *)
 esac
+
 
 
