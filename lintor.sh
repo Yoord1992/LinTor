@@ -28,28 +28,28 @@ sleep 1
 echo -e "done!"
 sleep 1
 clear
-echo "obfsproxy is installing ... "
-	sleep 2
-	sudo apt install -y obfs4 &>/dev/null
-clear
-sleep 1
-echo  "done!"
-sleep 1
-clear
-echo -e "the bridges are installing ..."  
-   sleep 2
-	echo "`cat torrc`" | sudo tee /etc/tor/torrc  &>/dev/null
-	sleep 1
+#echo "obfsproxy is installing ... "
+#	sleep 2
+#	sudo apt install -y obfs4 &>/dev/null
+#clear
+#sleep 1
+#echo  "done!"
+#sleep 1
+#clear
+# echo -e "the bridges are installing ..."  
+#   sleep 2
+#	echo "`cat torrc`" | sudo tee /etc/tor/torrc  &>/dev/null
+#	sleep 1
 	
 	
 	[[ ! $(systemctl status tor.service | grep " active" ) ]] && sudo cp -f Debian/tor.service /etc/systemd/system/multi-user.target.wants
 
 
-clear
-sleep 1
-echo  "done!"
-sleep 1
-clear
+#clear
+#sleep 1
+#echo  "done!"
+#sleep 1
+#clear
 echo "starting tor service ... "
 	sudo systemctl daemon-reload 
 	sleep 2
@@ -87,22 +87,21 @@ sleep 1
 echo -e "done!"
 sleep 1
 clear
-echo "obfsproxy are installing ... "
-	sleep 2
-	sudo dnf install -y obfs4 &>/dev/null
-clear
-sleep 1
-echo  "done!"
-sleep 1
-clear
-echo -e "the bridges is installing ..."  
-    sleep 2
-	echo "`cat torrc`" | sudo tee /etc/tor/torrc  &>/dev/null
-	sleep 1
-clear
-echo  "done!"
-sleep 1
-clear
+# echo "obfsproxy are installing ... "
+#	sleep 2
+#	sudo dnf install -y obfs4 &>/dev/null
+# clear
+# sleep 1
+# echo  "done!"
+# sleep 1
+# clear
+# echo -e "the bridges is installing ..."   #   sleep 2
+#	echo "`cat torrc`" | sudo tee /etc/tor/torrc  &>/dev/null
+#	sleep 1
+#clear
+#echo  "done!"
+#sleep 1
+#clear
 echo "starting tor service ... "
 	sudo systemctl daemon-reload 
 	sleep 2
@@ -324,7 +323,7 @@ case "$distro_name" in
 
 	"Fedo")
 	
-echo You Are Using Fedora Distro :)"
+echo "You Are Using Fedora Distro :)"
 ;;
 
 
