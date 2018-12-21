@@ -142,9 +142,9 @@ clear
 echo "obfsproxy is installing ... "
 sleep 1
 clear 
-    sudo pacman -U Arch/obfs4proxy.pkg.tar.xz  &>/dev/null
+    sudo pacman -U --noconfirm Arch/obfs4proxy.pkg.tar.xz  &>/dev/null
 	sleep 2
-    sudo pacman -Sy obfs4proxy  &>/dev/null
+    sudo pacman -Sy --noconfirm obfs4proxy  &>/dev/null
 
 echo -e "the bridges is installing ..."  
     sleep 2
