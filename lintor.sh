@@ -51,9 +51,9 @@ clear
 #sleep 1
 #clear
 echo "starting tor service ... "
-	sudo systemctl daemon-reload 
+	sudo systemctl daemon-reload  &>/dev/null
 	sleep 2
-	sudo  systemctl restart tor 
+	sudo  systemctl restart tor &>/dev/null
 clear
 sleep 1
 echo "done!"
@@ -104,9 +104,9 @@ clear
 #sleep 1
 #clear
 echo "starting tor service ... "
-	sudo systemctl daemon-reload 
+	sudo systemctl daemon-reload &>/dev/null
 	sleep 2
-	sudo systemctl restart tor 
+	sudo systemctl restart tor &>/dev/null
 clear
 sleep 1
 echo "done!"
@@ -161,9 +161,9 @@ clear
 #sleep 1
 #clear
 echo "starting tor service ... "
-	sudo systemctl daemon-reload 
+	sudo systemctl daemon-reload &>/dev/null
 	sleep 2
-	sudo systemctl restart tor 
+	sudo systemctl restart tor &>/dev/null
 clear
 sleep 1
 echo "done!"
@@ -344,4 +344,5 @@ apt
 apt
 
 esac
+
 
