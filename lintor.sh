@@ -28,15 +28,15 @@ sleep 1
 echo -e "done!"
 sleep 1
 clear
-#echo "obfsproxy is installing ... "
-#	sleep 2
-#	sudo apt install -y obfs4 &>/dev/null
-#clear
-#sleep 1
-#echo  "done!"
-#sleep 1
-#clear
-# echo -e "the bridges are installing ..."  
+ echo "obfsproxy is installing ... "
+	sleep 2
+	sudo apt install -y obfsproxy &>/dev/null
+clear
+sleep 1
+echo  "done!"
+sleep 1
+clear
+#echo -e "the bridges is installing ..."  
 #   sleep 2
 #	echo "`cat torrc`" | sudo tee /etc/tor/torrc  &>/dev/null
 #	sleep 1
@@ -87,15 +87,16 @@ sleep 1
 echo -e "done!"
 sleep 1
 clear
-# echo "obfsproxy are installing ... "
-#	sleep 2
-#	sudo dnf install -y obfs4 &>/dev/null
-# clear
-# sleep 1
-# echo  "done!"
-# sleep 1
-# clear
-# echo -e "the bridges is installing ..."   #   sleep 2
+echo "obfsproxy is installing ... "
+	sleep 2
+	sudo dnf install -y obfs4 &>/dev/null
+clear
+sleep 1
+echo  "done!"
+sleep 1
+clear
+#echo -e "the bridges is installing ..."  
+#    sleep 2
 #	echo "`cat torrc`" | sudo tee /etc/tor/torrc  &>/dev/null
 #	sleep 1
 #clear
@@ -105,7 +106,7 @@ clear
 echo "starting tor service ... "
 	sudo systemctl daemon-reload 
 	sleep 2
-	sudo systemctl restart tor.service
+	sudo systemctl restart tor 
 clear
 sleep 1
 echo "done!"
@@ -138,32 +139,31 @@ sleep 1
 echo -e "done!"
 sleep 1
 clear
-# echo "obfsproxy is installing ... "
+#echo "obfsproxy is installing ... "
 #sleep 1
 #clear 
- #   sudo pacman -U --noconfirm Arch/obfs4proxy.pkg.tar.xz  &>/dev/null
+#    sudo pacman -U --noconfirm Arch/obfs4proxy.pkg.tar.xz  &>/dev/null
 #	sleep 2
- #   sudo pacman -Sy --noconfirm obfs4proxy  &>/dev/null
+#    sudo pacman -Sy --noconfirm obfs4proxy  &>/dev/null
 
-#echo -e "the bridges are installing ..."  
- #   sleep 2
+#echo -e "the bridges is installing ..."  
+#    sleep 2
 #	echo "`cat torrc`" | sudo tee /etc/tor/torrc  &>/dev/null
 #	sleep 1
 	
-#[[ ! $(systemctl status tor.service | grep " active" ) ]] && sudo cp -f Arch/tor.service /etc/systemd/system/multi-user.target.wants
+# [[ ! $(systemctl status tor.service | grep " active" ) ]] && sudo cp -f Arch/tor.service /etc/systemd/system/multi-user.target.wants
 		 
 
 	
 #clear
-#sleep 
+#sleep 1
 #echo  "done!"
 #sleep 1
 #clear
 echo "starting tor service ... "
-	sleep 1
-	sudo systemctl enable tor.service
-	sleep 1
-        sudo systemctl start tor.service
+	sudo systemctl daemon-reload 
+	sleep 2
+	sudo systemctl restart tor 
 clear
 sleep 1
 echo "done!"
@@ -205,68 +205,6 @@ done
 
 echo  "$distro"
 
-################# apt #########################
-
-clear
-
-case "$distro" in
-
-		"apt")
-
-
-case "$distro_name" in
-
-	"Ubun")
-	
-echo "You Are Using Ubuntu Distro :)"
-;;
-
-		
-	"Deep")
-	
-echo "You Are Using Deepin Distro :)"
-;;
-
-
-    "Linu")
-	
-echo "You Are Using Linux Mint Distro :)"
-;;
-
-
-    "Zubu")
-	
-echo "You Are Using Zubuntu Distro :)"
-;; 
-
-
-    "Xubu")
-	
-echo "You Are Using Xubuntu Distro :)"
-;; 
-
-
-    "Debi")
-	
-echo "You Are Using Debian Distro :)"
-;; 
-
-
-*)
-
-esac
-
-echo -e "please wait ..."
-
-sleep 5
-apt
-;;
-
-*)
-
-esac
-
-
 
 ##################      pacman        ###########################3
 
@@ -281,19 +219,50 @@ case "$distro_name" in
 
 	"Arch")
 	
-echo "You Are Using Arch Distro :)"
+echo "you are using Arch :)"
 ;;
 
 		
 	"Manj")
 	
-echo "You Are Using Manjaro Distro :)"
+echo "you are using Manjaro :)"
 ;;
 
 
     "Anar")
 	
-echo "You Are Using Anarchy Distro :)"
+echo "you are using Anarchy :)"
+;;
+
+
+*)
+
+esac
+
+echo -e "please wait ..."
+
+sleep 5
+pacman
+
+;;
+
+*)
+
+esac
+
+
+##################      dnf        ###########################3
+
+case "$distro" in
+
+		"dnf")
+
+
+case "$distro_name" in
+
+	"Fedo")
+	
+echo "you are using Fedora :)"
 ;;
 
 
@@ -311,20 +280,51 @@ pacman
 *)
 esac
 
+################# apt #########################
 
-##################      dnf        ###########################3
+clear
 
 case "$distro" in
 
-		"dnf")
+		"apt")
 
 
 case "$distro_name" in
 
-	"Fedo")
+	"Ubun")
 	
-echo "You Are Using Fedora Distro :)"
+echo "you are using Ubuntu :)"
 ;;
+
+		
+	"Deep")
+	
+echo "you are using Deepin :)"
+;;
+
+
+    "Linu")
+	
+echo "you are using Linux Mint :)"
+;;
+
+
+    "Zubu")
+	
+echo "you are using Zubuntu :)"
+;; 
+
+
+    "Xubu")
+	
+echo "you are using Xubuntu :)"
+;; 
+
+
+    "Debi")
+	
+echo "you are using Debian :)"
+;; 
 
 
 *)
@@ -334,9 +334,14 @@ esac
 echo -e "please wait ..."
 
 sleep 5
-dnf
+
+apt
 
 ;;
 
 *)
+
+apt
+
 esac
+
