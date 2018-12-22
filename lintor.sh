@@ -161,9 +161,10 @@ clear
 #sleep 1
 #clear
 echo "starting tor service ... "
-	sudo systemctl daemon-reload &>/dev/null
+	
+	sudo systemctl enable tor.service &>/dev/null
 	sleep 2
-	sudo systemctl restart tor &>/dev/null
+        sudo systemctl start tor.service &>/dev/null
 clear
 sleep 1
 echo "done!"
