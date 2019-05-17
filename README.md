@@ -24,5 +24,3 @@ Easy Install Tor Service On GNU/Linux Distribution
 <p>
 <b>Telegram :</b> LinApps
 <p>
-<b>Instagram :</b> LinApps_Insta 
-<p>
