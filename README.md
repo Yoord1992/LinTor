@@ -3,7 +3,7 @@
 <center/>
 
 # LinTor V0.0.1
-Eeasy Install Tor Service On GNU/Linux Distribution
+Easy Install Tor Service On GNU/Linux Distribution
 <p>
   &nbsp;
 
