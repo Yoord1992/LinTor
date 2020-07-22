@@ -1,26 +1,26 @@
 <center>
-<img src="http://s8.picofile.com/file/8346451742/LinTor.png">
+<img src="http://s12.picofile.com/file/8403665368/photo_2020_06_16_09_47_50.jpg">
 <center/>
 
-# LinTor V0.0.1
-Easy Install Tor Service On GNU/Linux Distribution
+# Anarchy Bot V2
+Easy Install Anarchy Service 
 <p>
   &nbsp;
 
-<b>How To Install LinTor </b>
+<b>How To Use Anarchy Bot </b>
 
-1 - git clone https://github.com/LinApps/LinTor
+1 - git clone https://github.com/Anarchy-Service/Anarchy-Bot
 <p>
 2 - cd LinTor
 <p>
-3 - chmod +x ./lintor.sh
+3 - chmod +x ./Anarchy-Bot
 <p>
-4 - ./lintor.sh
+4 - ./Anarchy-Bot
 &nbsp;
   <p>
     <p>
 &nbsp;
 &nbsp;
 <p>
-<b>Telegram :</b> LinApps
+<b>Telegram :</b> AnarchyService_Bot
 <p>
